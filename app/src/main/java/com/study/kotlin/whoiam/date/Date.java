@@ -1,5 +1,6 @@
 package com.study.kotlin.whoiam.date;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class Date {
@@ -11,6 +12,17 @@ public class Date {
 
 
     public Date(int year, int month, int day) { setDate(year, month, day); }
+
+    public Date(String date) {
+
+        String[] dates = date.split("/");
+
+        setDate(
+                Integer.parseInt(dates[0]),
+                Integer.parseInt(dates[1]),
+                Integer.parseInt(dates[2])
+        );
+    }
 
     public void setDate(int year , int month, int day){
 
