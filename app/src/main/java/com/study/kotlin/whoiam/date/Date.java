@@ -8,6 +8,17 @@ import java.util.Calendar;
 
 public class Date {
 
+    public static Date now(){
+
+        Calendar calendar = Calendar.getInstance();
+
+        return new Date(
+                calendar.get(Calendar.YEAR),
+                calendar.get(Calendar.MONTH) +1,
+                calendar.get(Calendar.DAY_OF_MONTH)
+        );
+    }
+
 
     public static boolean isLeapYear(int year) {
         if (year%4 == 0) { return year%100 != 0;} else {return year%400 == 0;}
