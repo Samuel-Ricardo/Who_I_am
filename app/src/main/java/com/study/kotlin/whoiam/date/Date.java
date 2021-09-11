@@ -85,4 +85,6 @@ public class Date {
                 this.day == date.day;
     }
 
+    @Override
+    public String toString(){ return formatFullDate();}
 }
