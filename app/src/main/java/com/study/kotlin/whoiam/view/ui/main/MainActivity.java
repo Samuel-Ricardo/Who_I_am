@@ -1,4 +1,4 @@
-package com.study.kotlin.whoiam.view;
+package com.study.kotlin.whoiam.view.ui.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 

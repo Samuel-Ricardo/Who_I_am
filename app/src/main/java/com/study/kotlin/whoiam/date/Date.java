@@ -8,6 +8,7 @@ import java.util.Calendar;
 
 public class Date {
 
+    @NotNull
     public static Date now(){
 
         Calendar calendar = Calendar.getInstance();
