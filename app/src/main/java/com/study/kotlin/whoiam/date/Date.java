@@ -61,6 +61,8 @@ public class Date {
         return calendar.get(Calendar.DAY_OF_YEAR);
     }
 
+
+
     public String formatSimpleDate(){
 
         String date = ""+day;
@@ -71,4 +73,6 @@ public class Date {
 
         return date+"/"+month;
     }
+
+    public String formatFullDate() { return formatSimpleDate()+"/"+year;}
 }
