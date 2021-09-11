@@ -24,4 +24,12 @@ public class Date {
             return 1;
         }
     }
+
+    private int checkDay(int day) {
+        if (day > 0 && day < 32) {
+            return day;
+        } else{
+            return 1;
+        }
+    }
 }
