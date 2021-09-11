@@ -75,4 +75,19 @@ public class Date {
     }
 
     public String formatFullDate() { return formatSimpleDate()+"/"+year;}
+
+    public boolean isEquals(Date date){
+        if(
+            this.year == date.year
+                &&
+            this.month == date.month
+                &&
+            this.day == date.day
+        ){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }
