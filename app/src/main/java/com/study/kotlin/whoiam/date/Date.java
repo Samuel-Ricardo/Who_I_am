@@ -9,6 +9,9 @@ public class Date {
     private int month = calendar.get(Calendar.MONTH) +1;
     private int day = calendar.get(Calendar.DAY_OF_MONTH);
 
+
+    public Date(int year, int month, int day) { setDate(year, month, day); }
+
     public void setDate(int year , int month, int day){
 
         this.year = year;
