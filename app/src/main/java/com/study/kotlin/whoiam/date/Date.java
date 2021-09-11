@@ -8,6 +8,15 @@ import java.util.Calendar;
 
 public class Date {
 
+
+    public static boolean isLeapYear(int year) {
+        if (year%4 == 0) { return year%100 != 0;} else {return year%400 == 0;}
+    }
+
+
+
+
+
     private Calendar calendar = Calendar.getInstance();
     private int year = calendar.get(Calendar.YEAR);
     private int month = calendar.get(Calendar.MONTH) +1;
