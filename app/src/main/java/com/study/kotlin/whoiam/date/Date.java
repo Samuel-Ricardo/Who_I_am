@@ -16,4 +16,12 @@ public class Date {
         this.day = checkDay(day);
         this.calendar.set(year,month,day);
     }
+
+    private int checkMonth(int month) {
+        if (month > 0 && month < 13) {
+            return month;
+        } else{
+            return 1;
+        }
+    }
 }
