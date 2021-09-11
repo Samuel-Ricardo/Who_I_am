@@ -1,5 +1,7 @@
 package com.study.kotlin.whoiam.date;
 
+import org.jetbrains.annotations.Contract;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -24,6 +26,8 @@ public class Date {
         );
     }
 
+
+
     public void setDate(int year , int month, int day){
 
         this.year = year;
@@ -32,6 +36,8 @@ public class Date {
         this.calendar.set(year,month,day);
     }
 
+
+    @Contract(pure = true)
     private int checkMonth(int month) {
         if (month > 0 && month < 13) {
             return month;
@@ -47,4 +53,7 @@ public class Date {
             return 1;
         }
     }
+
+
+    public boolean isLeapYear() { if (year%4 == 0) { return year%100 != 0;} else {return year%400 == 0;}}
 }
