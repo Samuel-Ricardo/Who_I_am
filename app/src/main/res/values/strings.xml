@@ -2,4 +2,5 @@
     <string name="app_name">Who I am</string>
     <string name="find_signo">Descubra seu Signo</string>
     <string name="lbl_birth_date">Data de Nascimento</string>
+    <string name="my_signo">Meu Signo</string>
 </resources>

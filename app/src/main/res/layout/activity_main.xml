@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    tools:context=".view.ui.main.MainActivity">
+    tools:context=".view.ui.main.MainActivity"
+    >
 
     <ImageView
         android:id="@+id/imageView"
@@ -20,23 +21,23 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
         >
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="200dp"
+
             android:background="@android:color/white"
             app:cardCornerRadius="20dp"
 
-            android:layout_marginTop="200dp"
+            android:layout_gravity="center"
             >
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:paddingHorizontal="20dp"
-                android:paddingBottom="20dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
                 >
 
                 <com.google.android.material.textview.MaterialTextView
@@ -52,20 +53,30 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/input_date"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:hint="@string/lbl_birth_date"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="@string/lbl_birth_date"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/materialTextView2">
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView2"
+                    app:startIconDrawable="@drawable/ic_event_black_24dp">
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:inputType="date" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/my_signo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_date"
+                    tools:layout_editor_absoluteX="20dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
