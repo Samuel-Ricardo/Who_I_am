@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/linear_gradient"
+    android:background="@drawable/sweep_gradient"
     tools:context=".view.ui.main.MainActivity"
     >
 
