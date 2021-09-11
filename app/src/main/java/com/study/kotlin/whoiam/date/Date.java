@@ -56,4 +56,8 @@ public class Date {
 
 
     public boolean isLeapYear() { if (year%4 == 0) { return year%100 != 0;} else {return year%400 == 0;}}
+
+    public int dayOfYear() {
+        return calendar.get(Calendar.DAY_OF_YEAR);
+    }
 }
