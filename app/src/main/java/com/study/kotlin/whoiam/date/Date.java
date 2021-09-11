@@ -1,6 +1,7 @@
 package com.study.kotlin.whoiam.date;
 
 import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -76,18 +77,12 @@ public class Date {
 
     public String formatFullDate() { return formatSimpleDate()+"/"+year;}
 
-    public boolean isEquals(Date date){
-        if(
-            this.year == date.year
-                &&
-            this.month == date.month
-                &&
-            this.day == date.day
-        ){
-            return true;
-        }else{
-            return false;
-        }
+    public boolean isEquals(@NotNull Date date){
+        return  this.year == date.year
+                    &&
+                this.month == date.month
+                    &&
+                this.day == date.day;
     }
 
 }
