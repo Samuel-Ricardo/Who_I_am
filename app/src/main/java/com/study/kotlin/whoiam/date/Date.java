@@ -60,4 +60,15 @@ public class Date {
     public int dayOfYear() {
         return calendar.get(Calendar.DAY_OF_YEAR);
     }
+
+    public String formatSimpleDate(){
+
+        String date = ""+day;
+        String month = ""+this.month;
+
+        if(day < 10) date = "0"+day;
+        if(this.month < 10) month = "0"+month;
+
+        return date+"/"+month;
+    }
 }
