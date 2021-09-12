@@ -1,8 +1,10 @@
-package com.study.kotlin.whoiam;
+package com.study.kotlin.whoiam.view.ui.signo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.study.kotlin.whoiam.R;
 
 public class signo_screen extends AppCompatActivity {
 

@@ -3,4 +3,5 @@
     <string name="find_signo">Descubra seu Signo</string>
     <string name="lbl_birth_date">Data de Nascimento</string>
     <string name="my_signo">Meu Signo</string>
+    <string name="your_signo">Seu Signo</string>
 </resources>
