@@ -41,6 +41,18 @@ public enum Signos {
             R.drawable.lion
     )),
 
+    VIRGEM(new Signo(
+            "Virgem",
+            new LiteDate(2021, 8, 23),
+            new LiteDate(2021, 9, 22),
+            R.drawable.virgem
+    )),
+
+
+
+
+
+
     private Signo signo;
 
     Signos(Signo signo) {
