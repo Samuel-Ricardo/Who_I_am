@@ -34,7 +34,12 @@ public enum Signos {
             R.drawable.cancer
     )),
 
-
+    LEAO(new Signo(
+            "Leão",
+            new LiteDate(2021, 7, 23),
+            new LiteDate(2021, 8, 22),
+            R.drawable.lion
+    )),
 
     private Signo signo;
 
