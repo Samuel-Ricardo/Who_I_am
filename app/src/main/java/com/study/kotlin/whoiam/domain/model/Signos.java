@@ -48,7 +48,12 @@ public enum Signos {
             R.drawable.virgem
     )),
 
-
+    LIBRA(new Signo(
+            "Virgem",
+            new LiteDate(2021, 9, 23),
+            new LiteDate(2021, 10, 22),
+            R.drawable.libra
+    )),
 
 
 
