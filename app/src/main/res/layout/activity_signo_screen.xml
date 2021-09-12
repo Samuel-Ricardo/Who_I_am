@@ -79,6 +79,8 @@
 
                 app:layout_constraintTop_toBottomOf="@+id/img_signo"
 
+                app:icon="@drawable/ic_event_black_24dp"
+
                 android:text="@string/more_one"
                 />
 
