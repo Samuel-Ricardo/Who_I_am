@@ -62,6 +62,19 @@ public enum Signos {
             R.drawable.scorpion
     )),
 
+    SAGITARIO(new Signo(
+            "Sagitário",
+            new LiteDate(2021, 11, 22),
+            new LiteDate(2021, 12, 21),
+            R.drawable.sagittarius
+    )),
+
+    CAPRICORNIO(new Signo(
+            "Capricórnio",
+            new LiteDate(2021, 12, 22),
+            new LiteDate(2022, 1, 19),
+            R.drawable.capricornio
+    )),
 
 
     private Signo signo;
