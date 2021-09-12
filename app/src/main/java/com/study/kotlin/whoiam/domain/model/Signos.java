@@ -6,6 +6,20 @@ import org.jetbrains.annotations.Contract;
 
 public enum Signos {
 
+    AQUARIO(new Signo(
+            "Aquário",
+            new LiteDate(2021, 1, 20),
+            new LiteDate(2022, 2, 18),
+            R.drawable.aquario
+    )),
+
+    PEIXES(new Signo(
+            "Peixes",
+            new LiteDate(2021, 2, 19),
+            new LiteDate(2022, 3, 20),
+            R.drawable.peixes
+    )),
+
     ARIES(new Signo(
             "Áries",
             new LiteDate(2021, 3, 21),
@@ -13,7 +27,7 @@ public enum Signos {
             R.drawable.aries
     )),
 
-    TOUROS(new Signo(
+    TOURO(new Signo(
       "Touro",
          new LiteDate(2021, 4, 21),
          new LiteDate(2021, 5, 20),
@@ -74,20 +88,6 @@ public enum Signos {
             new LiteDate(2021, 12, 22),
             new LiteDate(2022, 1, 19),
             R.drawable.capricornio
-    )),
-
-    AQUARIO(new Signo(
-            "Aquário",
-            new LiteDate(2021, 1, 20),
-            new LiteDate(2022, 2, 18),
-            R.drawable.aquario
-    )),
-
-    PEIXES(new Signo(
-            "Peixes",
-            new LiteDate(2021, 2, 19),
-            new LiteDate(2022, 3, 20),
-            R.drawable.peixes
     ));
 
     private Signo signo;
