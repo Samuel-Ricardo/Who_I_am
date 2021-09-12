@@ -16,5 +16,9 @@ public class SignoScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySignoScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+
     }
+
+
 }

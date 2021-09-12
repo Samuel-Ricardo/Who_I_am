@@ -1,4 +1,4 @@
-package com.study.kotlin.whoiam.date;
+package com.study.kotlin.whoiam.domain.model;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;

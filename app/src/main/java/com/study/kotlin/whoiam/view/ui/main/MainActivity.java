@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.google.android.material.datepicker.MaterialDatePicker;
-import com.study.kotlin.whoiam.R;
 import com.study.kotlin.whoiam.databinding.ActivityMainBinding;
-import com.study.kotlin.whoiam.date.LiteDate;
+import com.study.kotlin.whoiam.domain.model.LiteDate;
 import com.study.kotlin.whoiam.view.ui.signo.SignoScreen;
 
 import java.text.SimpleDateFormat;
