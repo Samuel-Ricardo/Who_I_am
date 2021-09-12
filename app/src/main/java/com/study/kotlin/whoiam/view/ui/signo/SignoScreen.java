@@ -5,12 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.study.kotlin.whoiam.R;
+import com.study.kotlin.whoiam.databinding.ActivitySignoScreenBinding;
 
 public class SignoScreen extends AppCompatActivity {
+
+    private ActivitySignoScreenBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signo_screen);
+        binding = ActivitySignoScreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 }
