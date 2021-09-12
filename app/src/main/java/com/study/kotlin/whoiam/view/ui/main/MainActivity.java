@@ -9,7 +9,9 @@ import com.google.android.material.datepicker.MaterialDatePicker;
 import com.study.kotlin.whoiam.R;
 import com.study.kotlin.whoiam.databinding.ActivityMainBinding;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater())
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
         
@@ -40,9 +42,13 @@ public class MainActivity extends AppCompatActivity {
                 TimeZone timeZone = TimeZone.getDefault();
                 int offSet = timeZone.getOffset(new Date().getTime()) * -1;
 
-
-
-                binding.inputDate.getEditText().setText(new Date((int) selection + offSet).format());
+                binding.inputDate.getEditText().setText(
+                        new SimpleDateFormat(
+                                "dd/MM/yyyy",
+                                new Locale("pt", "BR"))
+                                    .format(
+                                            new Date((int) selection + offSet)
+                                    ));
             });
 
             datePicker.show(getSupportFragmentManager(), "DATE_PICKER_TAG");
