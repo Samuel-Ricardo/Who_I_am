@@ -55,6 +55,12 @@ public enum Signos {
             R.drawable.libra
     )),
 
+    ESCORPIAO(new Signo(
+            "Escorpião",
+            new LiteDate(2021, 10, 23),
+            new LiteDate(2021, 11, 21),
+            R.drawable.scorpion
+    )),
 
 
 
