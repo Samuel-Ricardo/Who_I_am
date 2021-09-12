@@ -22,10 +22,18 @@ public enum Signos {
 
     GEMEOS(new Signo(
             "Gêmeos",
-            new LiteDate(2021, 4, 21),
-            new LiteDate(2021, 5, 20),
-            R.drawable.taurus
+            new LiteDate(2021, 5, 21),
+            new LiteDate(2021, 6, 20),
+            R.drawable.gemeos
     )),
+
+    CANCER(new Signo(
+            "Câncer",
+            new LiteDate(2021, 6, 21),
+            new LiteDate(2021, 7, 22),
+            R.drawable.cancer
+    )),
+
 
 
     private Signo signo;
