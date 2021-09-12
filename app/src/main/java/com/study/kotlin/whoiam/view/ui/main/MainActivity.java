@@ -5,8 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.material.datepicker.MaterialDatePicker;
 import com.study.kotlin.whoiam.R;
 import com.study.kotlin.whoiam.databinding.ActivityMainBinding;
+
+import java.util.Date;
+import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +31,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupListeners() {
+
+        binding.inputDate.getEditText().setOnClickListener(view -> {
+
+            MaterialDatePicker datePicker = MaterialDatePicker.Builder.datePicker().build();
+
+            datePicker.addOnPositiveButtonClickListener(selection -> {
+                TimeZone timeZone = TimeZone.getDefault();
+                int offSet = timeZone.getOffset(new Date().getTime()) * -1;
+
+
+
+                binding.inputDate.getEditText().setText(new Date((int) selection + offSet).format());
+            });
+
+            datePicker.show(getSupportFragmentManager(), "DATE_PICKER_TAG");
+        });
+
     }
 
 
