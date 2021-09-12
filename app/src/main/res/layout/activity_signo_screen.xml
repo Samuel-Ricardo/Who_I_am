@@ -10,7 +10,7 @@
 
     android:padding="20dp"
 
-    tools:context=".view.ui.signo.signo_screen">
+    tools:context=".view.ui.signo.SignoScreen">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

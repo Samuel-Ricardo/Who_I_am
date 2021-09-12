@@ -2,12 +2,15 @@ package com.study.kotlin.whoiam.view.ui.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.study.kotlin.whoiam.R;
 import com.study.kotlin.whoiam.databinding.ActivityMainBinding;
+import com.study.kotlin.whoiam.date.LiteDate;
+import com.study.kotlin.whoiam.view.ui.signo.SignoScreen;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,6 +20,7 @@ import java.util.TimeZone;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    public static LiteDate birthDate = LiteDate.now();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
             });
 
             datePicker.show(getSupportFragmentManager(), "DATE_PICKER_TAG");
+        });
+
+
+        binding.btnMySigno.setOnClickListener(view -> {
+
+           birthDate = new LiteDate(binding.inputDate.getEditText().getText().toString());
+
+           startActivity(new Intent(this, SignoScreen.class));
         });
 
     }

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.ui.signo.signo_screen"></activity>
+        <activity android:name=".view.ui.signo.SignoScreen"></activity>
         <activity android:name=".view.ui.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

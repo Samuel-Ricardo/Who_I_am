@@ -3,17 +3,16 @@ package com.study.kotlin.whoiam.date;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 
-public class Date {
+public class LiteDate {
 
     @NotNull
-    public static Date now(){
+    public static LiteDate now(){
 
         Calendar calendar = Calendar.getInstance();
 
-        return new Date(
+        return new LiteDate(
                 calendar.get(Calendar.YEAR),
                 calendar.get(Calendar.MONTH) +1,
                 calendar.get(Calendar.DAY_OF_MONTH)
@@ -35,9 +34,9 @@ public class Date {
     private int day = calendar.get(Calendar.DAY_OF_MONTH);
 
 
-    public Date(int year, int month, int day) { setDate(year, month, day); }
+    public LiteDate(int year, int month, int day) { setDate(year, month, day); }
 
-    public Date(String date) {
+    public LiteDate(String date) {
 
         String[] dates = date.split("/");
 
@@ -98,7 +97,7 @@ public class Date {
 
     public String formatFullDate() { return formatSimpleDate()+"/"+year;}
 
-    public boolean isEquals(@NotNull Date date){
+    public boolean isEquals(@NotNull LiteDate date){
         return  this.year == date.year
                     &&
                 this.month == date.month

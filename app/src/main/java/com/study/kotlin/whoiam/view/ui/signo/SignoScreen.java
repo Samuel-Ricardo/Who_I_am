@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.study.kotlin.whoiam.R;
 
-public class signo_screen extends AppCompatActivity {
+public class SignoScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
