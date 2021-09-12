@@ -83,6 +83,12 @@ public enum Signos {
             R.drawable.aquario
     )),
 
+    PEIXES(new Signo(
+            "Peixes",
+            new LiteDate(2021, 2, 19),
+            new LiteDate(2022, 3, 20),
+            R.drawable.peixes
+    ));
 
     private Signo signo;
 
