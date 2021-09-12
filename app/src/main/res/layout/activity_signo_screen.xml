@@ -42,19 +42,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-    android:id="@+id/img_signo"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/img_signo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="20dp"
 
 
-
-        android:layout_margin="20dp"
-
-        app:layout_constraintTop_toBottomOf="@+id/your_signo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/your_signo"
+                app:srcCompat="@drawable/aries" />
 
             <com.google.android.material.textview.MaterialTextView
 
@@ -79,7 +78,7 @@
 
                 app:layout_constraintTop_toBottomOf="@+id/img_signo"
 
-                app:icon="@drawable/ic_event_black_24dp"
+                app:icon="@drawable/ic_arrow_left"
 
                 android:text="@string/more_one"
                 />
