@@ -11,8 +11,21 @@ public enum Signos {
             new LiteDate(2021, 3, 21),
             new LiteDate(2021, 4, 20),
             R.drawable.aries
-    ));
+    )),
 
+    TOUROS(new Signo(
+      "Touro",
+         new LiteDate(2021, 4, 21),
+         new LiteDate(2021, 5, 20),
+         R.drawable.taurus
+    )),
+
+    GEMEOS(new Signo(
+            "Gêmeos",
+            new LiteDate(2021, 4, 21),
+            new LiteDate(2021, 5, 20),
+            R.drawable.taurus
+    )),
 
 
     private Signo signo;
