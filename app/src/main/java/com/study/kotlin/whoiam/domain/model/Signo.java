@@ -14,21 +14,20 @@ public class Signo {
     private int image;
 
     public Signo(String name, LiteDate startDate, LiteDate endDate, int image) {
+        setSigno(name, startDate, endDate, image);
+    }
+
+    public Signo(LiteDate birthDate) {
+        Signo signo = Signos.get(birthDate).getSigno();
+        setSigno(signo.name, signo.startDate, signo.endDate, signo.image);
+    }
+
+    private void setSigno(String name, LiteDate startDate, LiteDate endDate, int image) {
         this.name = name;
         this.startDate = startDate;
         this.endDate = endDate;
         this.image = image;
     }
-
-    public Signo(LiteDate birthDate) {
-        Signo signo = Signos.get(birthDate).getSigno();
-
-        this.name = signo.name;
-        this.startDate = signo.startDate;
-        this.endDate = signo.endDate;
-        this.image = signo.image;
-    }
-
 
 
     public String getName() {
