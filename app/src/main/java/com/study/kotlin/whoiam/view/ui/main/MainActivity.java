@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                                 "dd/MM/yyyy",
                                 new Locale("pt", "BR"))
                                     .format(
-                                            new Date((int) selection + offSet)
+                                            new Date((long) selection + offSet)
                                     ));
             });
 

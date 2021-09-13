@@ -14,13 +14,13 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/constelacao_no_pote"
+        android:src="@drawable/constelacao_no_pote_medio"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="1000dp"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         android:paddingHorizontal="20dp"
         >
@@ -32,9 +32,7 @@
             android:background="@android:color/white"
             app:cardCornerRadius="20dp"
 
-            android:layout_marginTop="200dp"
-
-            android:layout_gravity="top|center"
+            android:layout_gravity="center"
             >
 
             <androidx.constraintlayout.widget.ConstraintLayout
