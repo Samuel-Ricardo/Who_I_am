@@ -3,6 +3,7 @@ package com.study.kotlin.whoiam.domain.model;
 import com.study.kotlin.whoiam.R;
 
 import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
 public enum Signos {
 
@@ -94,7 +95,7 @@ public enum Signos {
 
     Signos(Signo signo) {
 
-        signo = signo;
+        this.signo = signo;
     }
 
     @Contract(pure = true)
@@ -103,7 +104,7 @@ public enum Signos {
     }
 
 
-    public static Signos get(LiteDate birthDate){
+    public static Signos get(@NotNull LiteDate birthDate){
         switch (birthDate.getMonth()){
 
             case 1: {

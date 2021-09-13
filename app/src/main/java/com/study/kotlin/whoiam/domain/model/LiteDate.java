@@ -36,14 +36,14 @@ public class LiteDate {
 
     public LiteDate(int year, int month, int day) { setDate(year, month, day); }
 
-    public LiteDate(String date) {
+    public LiteDate(@NotNull String date) {
 
         String[] dates = date.split("/");
 
         setDate(
-                Integer.parseInt(dates[0]),
+                Integer.parseInt(dates[2]),
                 Integer.parseInt(dates[1]),
-                Integer.parseInt(dates[2])
+                Integer.parseInt(dates[0])
         );
     }
 
