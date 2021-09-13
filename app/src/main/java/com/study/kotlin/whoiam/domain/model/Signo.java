@@ -19,5 +19,37 @@ public class Signo {
         this.endDate = endDate;
         this.image = image;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public LiteDate getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(LiteDate startDate) {
+        this.startDate = startDate;
+    }
+
+    public LiteDate getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(LiteDate endDate) {
+        this.endDate = endDate;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
+    }
 }
 

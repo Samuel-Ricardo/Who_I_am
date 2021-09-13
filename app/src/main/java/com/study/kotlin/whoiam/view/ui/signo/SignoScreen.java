@@ -6,6 +6,9 @@ import android.os.Bundle;
 
 import com.study.kotlin.whoiam.R;
 import com.study.kotlin.whoiam.databinding.ActivitySignoScreenBinding;
+import com.study.kotlin.whoiam.domain.model.Signo;
+
+import static com.study.kotlin.whoiam.App.birthDate;
 
 public class SignoScreen extends AppCompatActivity {
 
@@ -16,6 +19,13 @@ public class SignoScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySignoScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        setup();
+    }
+
+    private void setup() {
+
+        Signo mySigno = new Signo(birthDate);
 
     }
 
