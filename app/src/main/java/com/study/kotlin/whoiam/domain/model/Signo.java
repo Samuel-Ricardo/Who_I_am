@@ -61,5 +61,7 @@ public class Signo {
     public void setImage(int image) {
         this.image = image;
     }
+
+    public String duration() { return startDate.formatSimpleDate() +" á "+ endDate.formatSimpleDate(); }
 }
 

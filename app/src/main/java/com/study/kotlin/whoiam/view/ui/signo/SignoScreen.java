@@ -27,7 +27,12 @@ public class SignoScreen extends AppCompatActivity {
 
     private void setup() {
 
-        Signo mySigno = Signos.get(birthDate).getSigno();
+        Signo signo = new Signo(birthDate);
+
+        binding.yourSigno.setText(signo.getName());
+        binding.imgSigno.setImageResource(signo.getImage());
+        binding.signoDate.setText(signo.duration());
+
 
     }
 
