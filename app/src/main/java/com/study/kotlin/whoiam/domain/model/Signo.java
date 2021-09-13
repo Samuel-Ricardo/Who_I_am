@@ -20,6 +20,12 @@ public class Signo {
         this.image = image;
     }
 
+    public Signo(LiteDate birthDate) {
+
+    }
+
+
+
     public String getName() {
         return name;
     }

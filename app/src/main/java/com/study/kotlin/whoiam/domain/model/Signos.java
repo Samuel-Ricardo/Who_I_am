@@ -101,4 +101,85 @@ public enum Signos {
     public Signo getSigno() {
         return signo;
     }
+
+
+    public static Signos get(LiteDate birthDate){
+        switch (birthDate.getMonth()){
+
+            case 1: {
+                if (birthDate.getDay() < Signos.AQUARIO.getSigno().getStartDate().getDay()) return Signos.CAPRICORNIO;
+
+                return Signos.AQUARIO;
+            }
+
+            case 2: {
+                if (birthDate.getDay() < Signos.PEIXES.getSigno().getStartDate().getDay()) return Signos.AQUARIO;
+
+                return Signos.PEIXES;
+            }
+
+            case 3: {
+                if (birthDate.getDay() < Signos.ARIES.getSigno().getStartDate().getDay()) return Signos.PEIXES;
+
+                return Signos.ARIES;
+            }
+
+            case 4: {
+                if (birthDate.getDay() < Signos.TOURO.getSigno().getStartDate().getDay()) return Signos.ARIES;
+
+                return Signos.TOURO;
+            }
+
+            case 5: {
+                if (birthDate.getDay() < Signos.GEMEOS.getSigno().getStartDate().getDay()) return Signos.TOURO;
+
+                return Signos.GEMEOS;
+            }
+            case 6: {
+                if (birthDate.getDay() < Signos.CANCER.getSigno().getStartDate().getDay()) return Signos.GEMEOS;
+
+                return Signos.CANCER;
+            }
+
+            case 7: {
+                if (birthDate.getDay() < Signos.LEAO.getSigno().getStartDate().getDay()) return Signos.CANCER;
+
+                return Signos.LEAO;
+            }
+
+            case 8: {
+                if (birthDate.getDay() < Signos.VIRGEM.getSigno().getStartDate().getDay()) return Signos.LEAO;
+
+                return Signos.VIRGEM;
+            }
+
+            case 9: {
+                if (birthDate.getDay() < Signos.LIBRA.getSigno().getStartDate().getDay()) return Signos.VIRGEM;
+
+                return Signos.LIBRA;
+            }
+
+            case 10: {
+                if (birthDate.getDay() < Signos.ESCORPIAO.getSigno().getStartDate().getDay()) return Signos.LIBRA;
+
+                return Signos.ESCORPIAO;
+            }
+
+            case 11: {
+                if (birthDate.getDay() < Signos.SAGITARIO.getSigno().getStartDate().getDay()) return Signos.ESCORPIAO;
+
+                return Signos.SAGITARIO;
+            }
+
+            case 12: {
+                if (birthDate.getDay() < Signos.CAPRICORNIO.getSigno().getStartDate().getDay()) return Signos.SAGITARIO;
+
+                return Signos.CAPRICORNIO;
+            }
+
+            default: {
+                return ARIES;
+            }
+        }
+    }
 }
