@@ -135,6 +135,7 @@ public enum Signos {
 
                 return Signos.GEMEOS;
             }
+
             case 6: {
                 if (birthDate.getDay() < Signos.CANCER.getSigno().getStartDate().getDay()) return Signos.GEMEOS;
 

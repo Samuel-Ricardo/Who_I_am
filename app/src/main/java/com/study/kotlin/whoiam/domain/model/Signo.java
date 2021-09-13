@@ -21,7 +21,12 @@ public class Signo {
     }
 
     public Signo(LiteDate birthDate) {
+        Signo signo = Signos.get(birthDate).getSigno();
 
+        this.name = signo.name;
+        this.startDate = signo.startDate;
+        this.endDate = signo.endDate;
+        this.image = signo.image;
     }
 
 
