@@ -2,6 +2,7 @@ package com.study.kotlin.whoiam.view.ui.signo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.study.kotlin.whoiam.App;
@@ -9,6 +10,7 @@ import com.study.kotlin.whoiam.R;
 import com.study.kotlin.whoiam.databinding.ActivitySignoScreenBinding;
 import com.study.kotlin.whoiam.domain.model.Signo;
 import com.study.kotlin.whoiam.domain.model.Signos;
+import com.study.kotlin.whoiam.view.ui.main.MainActivity;
 
 import static com.study.kotlin.whoiam.App.birthDate;
 
@@ -33,7 +35,13 @@ public class SignoScreen extends AppCompatActivity {
         binding.imgSigno.setImageResource(signo.getImage());
         binding.signoDate.setText(signo.duration());
 
+        setupListeners();
+    }
 
+    private void setupListeners() {
+        binding.btnAgain.setOnClickListener(view -> {
+            startActivity(new Intent(this, MainActivity.class));
+        });
     }
 
 
